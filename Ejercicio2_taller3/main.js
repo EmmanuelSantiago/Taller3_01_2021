@@ -1,5 +1,6 @@
-let number = [];
+let numero = [];
 
+parar:
 do{
     let n = parseInt(prompt('Ingrese numero:'));
     numero.push(n);

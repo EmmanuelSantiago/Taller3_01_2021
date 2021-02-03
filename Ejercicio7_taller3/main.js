@@ -4,10 +4,8 @@
 // Hacer un organigrama que dado un número N nos diga si es o no perfecto.
 
 let n = parseInt(prompt('Ingrese un numero entero positivo: '));
-let d = parseInt(prompt('Ingrese otro numero entero positivo: '));
 let suma = 0;
 
-if ( n%d == 0){
     for (let divisores = 1; divisores < n; divisores++){
         if (n%divisores == 0){
             suma = suma + divisores;
@@ -19,8 +17,5 @@ if ( n%d == 0){
     } else{
         console.log(`La suma de sus divisores menos el mismo da ${suma} y el numero ${n} no es perfecto`)
     }
-    
-}else {
-    console.log(`Los numeros ${n} y ${d} no cumplen la condicion de numero perfecto, su residuo es ${n%d}`)
-}
+
 
